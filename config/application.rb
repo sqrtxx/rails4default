@@ -25,6 +25,9 @@ module Rails4Default
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # For AssetPipeline
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+
     # Generator Settings
     config.generators do |g|
       g.test_framework :rspec,
